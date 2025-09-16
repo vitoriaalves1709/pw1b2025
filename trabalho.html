@@ -12,13 +12,154 @@
             font-size: 36px;
             margin-top: 20px;
         }
+
+        .colorido{
+            background-color: #FFFFE0;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        input style{
+            width: 300px;
+            height: 40px;
+            border: 2px solid #7A7A7A;
+            margin: 15px;
+        }
+
+        .meu-botão{
+            background-color: #6eb8f5;
+            color: #FFFFFF;
+            font-size: 16px;
+            border: 1px solid #1b00b6;
+            padding: 20px;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: #7a7a7a7a;
+            border: 1 px solid #020202;
+            margin: 10px;
+        }
+
+        .Tracejado{
+            border: dashed;
+            margin: 20px;
+            font-size: 16px;
+        }
+
+        .Tabelacomcores{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid #020202;
+            font-size: 16px;
+        }
+
+        th{
+            background-color: #020202;
+            color: #f2f5f7;
+            border: 1px solid #020202;
+            font-size: 16px;
+        }
+
+        .caixacentralizada{
+            width: 300px;
+            height: 150px;
+            background-color: #fdb4bf;
+            border: 2px solid #9a0526;
+        }
+
+        a{
+            background-color: #88b257;
+            color: #FFFFFF;
+            font-size: 14px;
+            border: 2px solid #1d361f;
+            margin: 10px;
+        }
+
+        table{
+            width: 990px;
+            background-color: #f5f5dc;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid #020202;
+        }
+
+        .Contatos{
+            font-size: 24px;
+            color: #1b00b6;
+        }
     </style>
 </head>
 <body>
-    <h1>Exercício 1</h1>
+    <h1>Título estilizado</h1>
     
-    <p>
-        
-    </p>
+    <p class="Colorido">Paragráfo colorido e estilo personalizado</p>
+
+    <input type="text" class="campo-estilizado">
+
+    <a class="meu-botão" href="https://open.spotify.com/intl-pt/album/0U69VPPPmw2VGsQW37Iy57">Visite o site</a>
+
+    <div id="Minha caixa">
+        <p>Este é um paragráfo de exemplo dentro da caixa</p>
+    </div>
+
+    <p class="Tracejado">Paragráfo com borda personalizada</p>
+
+    <h1>Tabela com cores</h1>
+    <table class="Tabelacomcores">
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>idade</th>
+                <th>Aluno</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+            <tr>
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+                <td>Dado 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="caixacentralizada">
+        <h1>Título centralizado</h1>
+    </div>
+
+    <a href="https://open.spotify.com/intl-pt/album/0U69VPPPmw2VGsQW37Iy57">
+        Link
+    </a>
+
+    <h1 class="Contatos">Tabela de Contatos</h1>
+<table>
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Email</td>
+            <td>Telefone</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Laura</td>
+            <td>aluno@gmail.com</td>
+            <td>14 90764-4325</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
