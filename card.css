@@ -13,6 +13,9 @@
     margin-bottom: 5px;
     text-align: right;
 }
+.classificação{
+    color:#494949;
+}
 
 .card-image{
    width: 100%;
@@ -23,22 +26,43 @@
 }
 
 .card-description{
+   align-items: center;
    font-size: 16px;
    font-weight: 100;
    margin-bottom: 10px;
    color: #000000
 }
 
+.card-desconto{
+    justify-content: space-between;
+    display: flex;
+    font-size: 13px;
+}
+
 .preço{
-    align-items: center;
-    block-size: auto;
-    font-size: 30px;
-    color: #fd931b;
-   font-weight: bold;
+    text-decoration: line-through;
+    color: #666666;
+}
+
+.desconto{
+    margin-left: 100px;
+   
 }
 
 .card-price{
-    align-items: center;
+    display: flex;
+    font-size: 30px;
+    color: #e96106;
+   font-weight: bold;
+}
+
+.price{
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: #e96106;
+    color: #ffffff;
+    border-radius: 15px;
+   
 }
 
 .card-parcelamento{
@@ -47,10 +71,20 @@
     font-size: 15px;
 }
 
+.desconto-negrito{
+    font-weight: bold;
+}
 .botão{
-    background-color: #fd931b;
+    background-color: #e96106;
     color: #ffffff;
-    border: #fd931b;
+    border: #e96106;
     font-size: 40px;
     text-align: center;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+.espaço{
+    height: 50px;
+    visibility: hidden;
 }
