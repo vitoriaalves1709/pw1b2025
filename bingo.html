@@ -115,6 +115,19 @@
         document.write(n)
         var g = []
         var o = []
+        function NumeroAleatorio(numeroMinimo, numeroMaximo)
+        {
+            var retorno = Math.random()
+            retorno = (retorno*numeroMaximo)
+            retorno = Math.floor(retorno)
+            if(retorno >= numeroMinimo)
+            {
+                return retorno
+            }else{
+                return NumeroAleatorio(numeroMinimo, numeroMaximo)
+            }
+        }
+        document.write("<h1>"+NumeroAleatorio(140,150)+"</h1>")
     </script>
 </body>
 </html>
