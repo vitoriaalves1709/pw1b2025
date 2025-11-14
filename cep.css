@@ -1,0 +1,19 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCC;
+}
+
+label, input{
+    display: block;
+}
+
+.formulario{
+    width: 500px;
+    background-color: #fff;
+    padding: 10px 15px;
+}

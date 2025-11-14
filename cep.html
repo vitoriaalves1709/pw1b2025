@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar o CEP</title>
+    <link rel="stylesheet" href="cep.css" />
+</head>
+<body>
+    <div class="formulario">
+        <h1>Consulte seu CEP</h1>
+        <label id="labelcep" >CEP</label>
+        <input type="text" id="cep" />
+        <label>Endereço</label>
+        <input type="text" id="endereco" />
+        <label>Bairro</label>
+        <input type="text" id="bairro" />
+        <label>Cidade</label>
+        <input type="text" id="cidade" />
+        <label>Estado</label>
+        <input type="text" id="estado" />
+        <button onclick="verdados()" >
+            Consultar
+        </button>
+    </div>
+    <script>
+        function verdados()
+        {
+            var cep = document.getElementById("cep")
+            var endereco = document.getElementById("endereco")
+            var bairro = document.getElementById("bairro")
+            var cidade = document.getElementById("cidade")
+            var estado = document.getElementById("estado")
+            var labelcep = document.getElementById("labelcep")
+
+            cep.style.border = "5px solid green"
+            endereco.value = "Agora preenchi os dados"
+            bairro.style.height = "180px"
+            cidade.style.backgroundColor = "blue"
+            estado.type = "number"
+            
+        }
+    </script>
+</body>
+</html>
