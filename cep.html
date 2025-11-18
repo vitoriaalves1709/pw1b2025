@@ -34,12 +34,22 @@
             var estado = document.getElementById("estado")
             var labelcep = document.getElementById("labelcep")
 
-            cep.style.border = "5px solid green"
-            endereco.value = "Agora preenchi os dados"
-            bairro.style.height = "180px"
-            cidade.style.backgroundColor = "blue"
-            estado.type = "number"
+            // cep.style.border = "5px solid green"
+            // endereco.value = "Agora preenchi os dados"
+            // bairro.style.height = "180px"
+            // cidade.style.backgroundColor = "blue"
+            // estado.type = "number"
             
+            var url = "https://viacep.com.br/ws/"+ cep.value +"/json/"
+
+            fetch(url)
+            .then((resposta) => resposta.json() )
+            .then((dados) => {
+                endereco.value = dados.logradouro
+                bairro.value = dados.bairro
+                cidade.value = dados.localidade
+                estado.value = dados.estado
+            })
         }
     </script>
 </body>
